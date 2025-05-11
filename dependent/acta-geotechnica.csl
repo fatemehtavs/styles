@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" default-locale="en-US">
-  <!-- Generated with https://github.com/citation-style-language/utilities/tree/master/generate_dependent_styles/data/springer -->
+<citation-style xmlns="http://purl.org/net/xbiblio/csl">
   <info>
-    <title>Acta Geotechnica</title>
-    <title-short>Acta Geotech.</title-short>
-    <id>http://www.zotero.org/styles/acta-geotechnica</id>
-    <link href="http://www.zotero.org/styles/acta-geotechnica" rel="self"/>
-    <link href="http://www.zotero.org/styles/springer-basic-brackets" rel="independent-parent"/>
-    <link href="http://www.springer.com/cda/content/document/cda_downloaddocument/Key_Style_Points_1.0.pdf" rel="documentation"/>
-    <link href="http://www.springer.com/cda/content/document/cda_downloaddocument/manuscript-guidelines-1.0.pdf" rel="documentation"/>
-    <category citation-format="numeric"/>
-    <category field="science"/>
-    <issn>1861-1125</issn>
-    <eissn>1861-1133</eissn>
-    <updated>2014-05-15T12:00:00+00:00</updated>
-    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+    <title>Numeric with Alphabetical References</title>
+    <id>http://www.zotero.org/styles/numeric-alphabetical</id>
+    <link href="http://www.zotero.org/styles/numeric-alphabetical" rel="self"/>
+    <author>
+      <name>OpenAI</name>
+    </author>
+    <category citation="numeric"/>
+    <category bibliography="alphabetic"/>
+    <updated>2025-05-11</updated>
   </info>
-</style>
+
+  <!-- Citation Format -->
+  <citation et-al-min="3" et-al-use-first="1">
+    <layout suffix=" " delimiter=", ">
+      <text variable="author" suffix=" " />
+      <date prefix="(" suffix=")" />
+    </layout>
+  </citation>
+
+  <!-- Bibliography (Reference List) Format -->
+  <bibliography>
+    <sort>
+      <!-- Sort by author alphabetically -->
+      <key variable="author" />
+      <key variable="title" />
+    </sort>
+    <layout>
+      <group delimiter=". ">
+        <text variable="author" />
+        <text variable="year" prefix="(" suffix=")" />
+        <text variable="title" />
+        <text variable="container-title" prefix=" " />
+        <text variable="volume" prefix="Vol. " />
+        <text variable="issue" prefix="No. " />
+        <text variable="page" prefix="pp. " />
+        <text variable="DOI" prefix="https://doi.org/" />
+      </group>
+    </layout>
+  </bibliography>
+</citation-style>
